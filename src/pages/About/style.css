@@ -1,0 +1,11 @@
+#about {
+  margin: 5%;
+}
+
+#maxOnBox {
+  max-width: 90%;
+  max-height: 90%;
+  border-color: #F5F7FA  ;
+  border-style: solid;
+  border-width: medium;
+}

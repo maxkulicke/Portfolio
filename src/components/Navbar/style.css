@@ -1,0 +1,18 @@
+.nav {
+  background-color: #F5F7FA;
+  /* height: 60px; */
+  /* line-height: 60px; */
+}
+
+.nav-link{
+  color: #1F2933;
+  font-size: 16pt;
+  background-color: #F5F7FA;
+}
+
+.active {
+  color: #F5F7FA;;
+  font-size: 16pt;
+  background-color: #1F2933;
+
+}
