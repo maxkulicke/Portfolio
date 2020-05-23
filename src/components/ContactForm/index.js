@@ -1,31 +1,29 @@
 import React, { useState } from "react";
-import Card from "../Card";
-import Container from "../Container/index";
-import Button from "../Button/index"
-import axios from "axios"
-
+// import Card from "../Card";
+// import Container from "../Container/index";
+// import Button from "../Button/index"
 
 function ContactForm() {
-
-  // const [books, setBooks] = useState([])
   const [formObject, setFormObject] = useState({})
+  const [status, setStatus] = useState("")
 
-  function handleFormSubmit(event) {
+  function submitForm(event) {
     event.preventDefault();
-    console.log(event);
-    console.log(formObject);
-
-    axios({
-      method: "POST",
-      url: "http://localhost:3002/send",
-      data: formObject
-    }).then((response) => {
-      if (response.data.status === 'success') {
-        alert("Message Sent.");
-      } else if (response.data.status === 'fail') {
-        alert("Message failed to send.")
+    const form = event.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        resetForm();
+        setStatus("SUCCESS");
+      } else {
+        setStatus("ERROR");
       }
-    })
+    };
+    xhr.send(data);
   }
 
   function resetForm() {
@@ -41,9 +39,12 @@ function ContactForm() {
 
   return (
     <div>
-      <h2>Get In Touch!</h2>
-      <h5>Drop me a message and i'll get back to you soon!</h5>
-      <form>
+      <h2>Get In Touch</h2>
+      <form
+        onSubmit={submitForm}
+        action="https://formspree.io/xbjzgrlo"
+        method="POST"
+      >
         <div className="form-group">
           <input
             type="name"
@@ -72,7 +73,8 @@ function ContactForm() {
             placeholder="leave your message here"
           ></textarea>
         </div>
-        <Button onClick={handleFormSubmit}>Send</Button>
+        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+        {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </form>
     </div>
   );

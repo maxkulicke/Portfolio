@@ -19,24 +19,34 @@ function About() {
                 <img src={Max} id="maxOnBox" alt="max" />
               </Col>
               <Col size="md-6">
-
-                <p>
-                  Live and Studio guitarist
-              <br />
-                  <br />
-              Full Stack Web Developer
-              Technologies:
-              </p>
+                <h5>
+                  Full Stack Web Developer
+                  <br></br>
+                  Technologies:
+                </h5>
                 <ul>
                   <li>Node JS</li>
-                  <li>React</li>
+                  <li>React/Redux</li>
                   <li>mySQL</li>
                   <li>Mongo</li>
                   <li>Express</li>
                 </ul>
-                <p>
+                <br />
+                <h5>
+                Live and Studio Guitarist
+                </h5>
+                <ul>
+                  <li>Lead / Rhythm Electric</li>
+                  <li>Lead / Rhythm Acoustic</li>
+                  <li>Slide Guitar</li>
+                  <li>Fingerstyle</li>
+                  <li>Experimental</li>
+                </ul>
+                <br />
+                <br />
+                {/* <p>
                   Music Teacher
-                </p>
+                </p> */}
 
               </Col>
             </Row>

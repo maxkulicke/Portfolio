@@ -6,8 +6,41 @@ import IFrame from "../../components/IFrame/"
 import imageUrl from "../../assets/images/babyMax.jpg"
 import "./style.css"
 
+let links = [
+  "https://open.spotify.com/embed/playlist/2jYT2jA70EZOFhL8WikqSK",
+  "https://www.youtube.com/embed/4yA1mJIxqns",
+  "https://www.youtube.com/embed/QEIOF7WfkZk",
+  "https://www.youtube.com/embed/FnWIFW0tAMs",
+  "https://www.youtube.com/embed/eMZMX6FYOoo",
+  "https://www.youtube.com/embed/gDpEGPhtrcc",
+  "https://www.youtube.com/embed/i9pFtSLUbv4",
+  "https://www.youtube.com/embed/pdbPJQhIIf8",
+  "https://www.youtube.com/embed/aTyLYjf6_wI",
+  "https://www.youtube.com/embed/NMwVmo-MYmU",
+]
+
+const makeIFrames = () => {
+  let iFrames = links.map(link => {
+    return (
+      <IFrame
+        src={link}
+        width="560"
+        height="315"
+        frameborder="0"
+        allowtransparency="true"
+        allow="encrypted-media"
+      />
+    )
+  })
+  return iFrames;
+}
+
 
 function Music() {
+
+
+  let iFrames = makeIFrames();
+
   return (
     <div id="music">
       <Row>
@@ -17,22 +50,7 @@ function Music() {
           <Container fluid>
             <h2>Music</h2>
             <h5>A sampling of my live and recorded work</h5>
-            <IFrame
-              src="https://open.spotify.com/embed/playlist/2jYT2jA70EZOFhL8WikqSK"
-              width="560"
-              height="315"
-              frameborder="0"
-              allowtransparency="true"
-              allow="encrypted-media"
-            />
-            <IFrame
-              src="https://www.youtube.com/embed/4yA1mJIxqns"
-              width="560"
-              height="315"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen="true"
-            />
+            {iFrames}
           </Container>
         </Col>
         <Col size="md-1">
