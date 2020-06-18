@@ -10,7 +10,7 @@ const bThere = require("../../assets/images/bthere.jpg")
 const password = require("../../assets/images/passwordgenerator.jpg")
 const dayPlanner = require("../../assets/images/dayplanner.jpg")
 const portfolio = require("../../assets/images/portfolio.jpg")
-const homebuyer = require("../../assets/images/climateApp.jpg")
+const climate = require("../../assets/images/climateApp.jpg")
 const majj = require("../../assets/images/majj.jpg")
 
 
@@ -39,13 +39,14 @@ function Portfolio() {
               </Col>
               <Col size="md-5">
                 <Project>
-                  <img src={bThere} className="card-img portfolio-img" alt="B.There"
-                    id="bThereImg" />
-                  <h5 className="card-title">Event Planner and Storage App</h5>
-                  <p className="card-text">Allows user to store a calendar of eventsthey are interested in</p>
-                  <Anchor href="https://maxkulicke.github.io/Group-Project-1/"
+                  <img src={climate} className="card-img portfolio-img" alt="Climate App"
+                    id="climateImg" />
+                  <h5 className="card-title">Local Climate App</h5>
+                  <p className="card-text">Allows user to access, process and graph federal climate data for
+                  any county in the United States</p>
+                  <Anchor href="https://ancient-reef-68356.herokuapp.com/"
                     className="btn" target="_blank">Visit</Anchor>
-                  <Anchor href="https://github.com/maxkulicke/b.there"
+                  <Anchor href="https://github.com/maxkulicke/local-climate-app"
                     className="btn" target="_blank">Repo</Anchor>
                 </Project>
               </Col>
@@ -54,24 +55,24 @@ function Portfolio() {
             <Row>
               <Col size="md-5">
                 <Project>
-                  <img src={cms} className="card-img portfolio-img" alt="Content Management System"
-                    id="cmsImg" />
-                  <h5 className="card-title">Content Management System</h5>
-                  <p className="card-text">A command line CMS to manage a hypothetical company and employees</p>
-                  <Anchor a href="https://github.com/maxkulicke/HW12/"
+                  <img src={password} className="card-img portfolio-img" alt="Password Generator"
+                    id="passwordImg" />
+                  <h5 className="card-title">Password Generator</h5>
+                  <p className="card-text">A random password generator with user defined parameters, 
+                  built with React</p>
+                  <Anchor href="https://frozen-fortress-06984.herokuapp.com/" className="btn"
+                    target="_blank">Visit</Anchor>
+                  <Anchor href="https://github.com/maxkulicke/Password-Generator" className="btn"
                     target="_blank">Repo</Anchor>
                 </Project>
               </Col>
               <Col size="md-5">
                 <Project>
-                  <img src={homebuyer} class="card-img portfolio-img" alt="Homebuyer's Climate App"
-                    id="homebuyerImg" />
-                  <h5 class="card-title">Homebuyer's Climate App</h5>
-                  <p class="card-text">Pairs local real estate
-                        listings with regional weather and climate data</p>
-                  <Anchor href="https://maxkulicke.github.io/Group-Project-1/" className="btn"
-                    target="_blank">Visit</Anchor>
-                  <Anchor href="https://github.com/maxkulicke/Group-Project-1" className="btn"
+                  <img src={cms} className="card-img portfolio-img" alt="Content Management System"
+                    id="cmsImg" />
+                  <h5 className="card-title">Content Management System</h5>
+                  <p className="card-text">A command line CMS to manage a hypothetical company and employees</p>
+                  <Anchor a href="https://github.com/maxkulicke/HW12/"
                     target="_blank">Repo</Anchor>
                 </Project>
               </Col>
@@ -106,14 +107,14 @@ function Portfolio() {
             <Row>
               <Col size="md-5">
                 <Project>
-                  <img src={password} className="card-img portfolio-img" alt="Password Generator"
-                    id="passwordImg" />
-                  <h5 className="card-title">Password Generator</h5>
-                  <p className="card-text">A random password generator with user defined parameters</p>
-                  <Anchor href="https://maxkulicke.github.io/HW3/" className="btn"
-                    target="_blank">Visit</Anchor>
-                  <Anchor href="https://github.com/maxkulicke/HW3/" className="btn"
-                    target="_blank">Repo</Anchor>
+                  <img src={bThere} className="card-img portfolio-img" alt="B.There"
+                    id="bThereImg" />
+                  <h5 className="card-title">Event Planner and Storage App</h5>
+                  <p className="card-text">Allows user to store a calendar of events they are interested in</p>
+                  <Anchor href="https://maxkulicke.github.io/Group-Project-1/"
+                    className="btn" target="_blank">Visit</Anchor>
+                  <Anchor href="https://github.com/maxkulicke/b.there"
+                    className="btn" target="_blank">Repo</Anchor>
                 </Project>
               </Col>
               <Col size="md-5">
