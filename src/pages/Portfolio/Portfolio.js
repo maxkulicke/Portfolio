@@ -12,6 +12,7 @@ const dayPlanner = require("../../assets/images/dayplanner.jpg")
 const portfolio = require("../../assets/images/portfolio.jpg")
 const climate = require("../../assets/images/climateApp.jpg")
 const majj = require("../../assets/images/majj.jpg")
+const snake = require("../../assets/images/snake.jpg")
 
 
 function Portfolio() {
@@ -68,11 +69,12 @@ function Portfolio() {
               </Col>
               <Col size="md-5">
                 <Project>
-                  <img src={cms} className="card-img portfolio-img" alt="Content Management System"
+                  <img src={snake} className="card-img portfolio-img" alt="Snake"
                     id="cmsImg" />
-                  <h5 className="card-title">Content Management System</h5>
-                  <p className="card-text">A command line CMS to manage a hypothetical company and employees</p>
-                  <Anchor a href="https://github.com/maxkulicke/HW12/"
+                  <h5 className="card-title">Snake</h5>
+                  <p className="card-text">My version of the classic game, designed and build from the ground
+                  up, written in Java</p>
+                  <Anchor a href="https://github.com/maxkulicke/Snake"
                     target="_blank">Repo</Anchor>
                 </Project>
               </Col>
@@ -118,16 +120,14 @@ function Portfolio() {
                 </Project>
               </Col>
               <Col size="md-5">
-                {/* <Project>
-                  <img src={password} className="card-img portfolio-img" alt="Password Generator"
-                    id="passwordImg" />
-                  <h5 className="card-title">Password Generator</h5>
-                  <p className="card-text">A random password generator with user defined parameters</p>
-                  <Anchor href="https://maxkulicke.github.io/HW3/" className="btn"
-                    target="_blank">Visit</Anchor>
-                  <Anchor href="https://github.com/maxkulicke/HW3/" className="btn"
+              <Project>
+                  <img src={cms} className="card-img portfolio-img" alt="Content Management System"
+                    id="cmsImg" />
+                  <h5 className="card-title">Content Management System</h5>
+                  <p className="card-text">A command line CMS to manage a hypothetical company and employees</p>
+                  <Anchor a href="https://github.com/maxkulicke/HW12/"
                     target="_blank">Repo</Anchor>
-                </Project> */}
+                </Project>
               </Col>
             </Row>
           </Container>
