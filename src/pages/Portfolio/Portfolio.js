@@ -32,7 +32,7 @@ function Portfolio() {
                     id="majjImg" />
                   <h5 className="card-title">MAJJ</h5>
                   <p className="card-text">A web 'mining' app for news and content</p>
-                  <Anchor href="www.majj.app" className="btn"
+                  <Anchor href="https://majj.app" className="btn"
                     target="_blank">Visit</Anchor>
                   <Anchor href="https://github.com/maxkulicke/HW3/" className="btn"
                     target="_blank">Repo</Anchor>
