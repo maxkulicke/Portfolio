@@ -10,6 +10,7 @@ let links = [
   "https://open.spotify.com/embed/playlist/2jYT2jA70EZOFhL8WikqSK",
   "https://www.youtube.com/embed/4yA1mJIxqns",
   "https://www.youtube.com/embed/QEIOF7WfkZk",
+  "https://www.youtube.com/embed/LMpF5NrbcvI",
   "https://www.youtube.com/embed/FnWIFW0tAMs",
   "https://www.youtube.com/embed/eMZMX6FYOoo",
   "https://www.youtube.com/embed/gDpEGPhtrcc",
@@ -17,6 +18,7 @@ let links = [
   "https://www.youtube.com/embed/pdbPJQhIIf8",
   "https://www.youtube.com/embed/aTyLYjf6_wI",
   "https://www.youtube.com/embed/NMwVmo-MYmU",
+  "https://www.youtube.com/embed/AWEkXtLFVjc"
 ]
 
 const makeIFrames = () => {

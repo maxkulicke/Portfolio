@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./style.css"
 
-const resumé = require("../../assets/resume.pdf")
+const resumé = require("../../assets/Max_Kulicke_Resumé.pdf")
 
 function Navbar() {
   const location = useLocation();
