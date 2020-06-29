@@ -48,28 +48,19 @@ function Navbar() {
       <div className="nav-right ml-auto">
         <ul className="nav ml-auto" id="">
           <li>
-            <Link
-              to=""
-              className="">
-              <a href="https://github.com/maxkulicke" className="nav-link" target="_blank">
-                Github </a>
-            </Link>
+            <a href="https://github.com/maxkulicke" className="nav-link"
+              target="_blank" rel="noopener noreferrer">
+              Github </a>
           </li>
           <li>
-            <Link
-              to=""
-              className="">
-              <a href="https://www.linkedin.com/in/max-kulicke-54516428/" className="nav-link" target="_blank">
-                LinkedIn </a>
-            </Link>
+            <a href="https://www.linkedin.com/in/max-kulicke-54516428/" className="nav-link"
+              target="_blank" rel="noopener noreferrer">
+              LinkedIn </a>
           </li>
           <li>
-            <Link
-              to=""
-              className="">
-              <a href={resumé} download={resumé} className="nav-link" target="_blank">
-                Resumé </a>
-            </Link>
+            <a href={resumé} download={resumé} className="nav-link"
+              target="_blank" rel="noopener noreferrer">
+              Resumé </a>
           </li>
         </ul>
       </div>
