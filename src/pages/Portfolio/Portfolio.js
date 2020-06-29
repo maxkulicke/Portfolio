@@ -25,13 +25,15 @@ function Portfolio() {
           <Container fluid className="portfolio">
             <h2>Projects</h2>
 
-            <Row>
+            <Row className="project-row">
               <Col size="md-5">
-                <Project>
+                <Project className="project">
                   <img src={majj} className="card-img portfolio-img" alt="MAJJ"
                     id="majjImg" />
                   <h5 className="card-title">MAJJ</h5>
                   <p className="card-text">A web 'mining' app for news and content</p>
+                  <br />
+                  <br />
                   <Anchor href="https://www.majj.app" className="btn"
                     target="_blank">Visit</Anchor>
                   <Anchor href="https://github.com/maxkulicke/HW3/" className="btn"
@@ -39,7 +41,7 @@ function Portfolio() {
                 </Project>
               </Col>
               <Col size="md-5">
-                <Project>
+                <Project className="project">
                   <img src={climate} className="card-img portfolio-img" alt="Climate App"
                     id="climateImg" />
                   <h5 className="card-title">Local Climate App</h5>
@@ -52,10 +54,10 @@ function Portfolio() {
                 </Project>
               </Col>
             </Row>
-
-            <Row>
+            <br />
+            <Row className="project-row">
               <Col size="md-5">
-                <Project>
+                <Project className="project">
                   <img src={password} className="card-img portfolio-img" alt="Password Generator"
                     id="passwordImg" />
                   <h5 className="card-title">Password Generator</h5>
@@ -68,24 +70,26 @@ function Portfolio() {
                 </Project>
               </Col>
               <Col size="md-5">
-                <Project>
+                <Project className="project">
                   <img src={snake} className="card-img portfolio-img" alt="Snake"
                     id="cmsImg" />
                   <h5 className="card-title">Snake</h5>
                   <p className="card-text">My version of the classic game, designed and build from the ground
                   up, written in Java</p>
+                  <br />
                   <Anchor a href="https://github.com/maxkulicke/Snake"
                     target="_blank">Repo</Anchor>
                 </Project>
               </Col>
             </Row>
-
-            <Row>
+            <br />
+            <Row className="project-row">
               <Col size="md-5">
-                <Project>
+                <Project className="project">
                   <img src={portfolio} className="card-img portfolio-img" alt="Day Planner" id="plannerImg" />
                   <h5 className="card-title">Personal Portfolio</h5>
                   <p className="card-text">My personal website, made with React</p>
+                  <br />
                   <Anchor href="https://maxkulicke.herokuapp.com/portfolio" className="btn"
                     target="_blank">Visit</Anchor>
                   <Anchor href="https://github.com/maxkulicke/React-Portfolio" className="btn"
@@ -93,7 +97,7 @@ function Portfolio() {
                 </Project>
               </Col>
               <Col size="md-5">
-                <Project>
+                <Project className="project">
                   <img src={dayPlanner} className="card-img portfolio-img" alt="Day Planner" id="plannerImg" />
                   <h5 className="card-title">Day Planner App</h5>
                   <p className="card-text">Planner for a work day,
@@ -105,10 +109,10 @@ function Portfolio() {
                 </Project>
               </Col>
             </Row>
-
-            <Row>
+            <br />
+            <Row className="project-row">
               <Col size="md-5">
-                <Project>
+                <Project className="project">
                   <img src={bThere} className="card-img portfolio-img" alt="B.There"
                     id="bThereImg" />
                   <h5 className="card-title">Event Planner and Storage App</h5>
@@ -120,11 +124,13 @@ function Portfolio() {
                 </Project>
               </Col>
               <Col size="md-5">
-              <Project>
+              <Project className="project">
                   <img src={cms} className="card-img portfolio-img" alt="Content Management System"
                     id="cmsImg" />
                   <h5 className="card-title">Content Management System</h5>
                   <p className="card-text">A command line CMS to manage a hypothetical company and employees</p>
+                  <br />
+                  <br />
                   <Anchor a href="https://github.com/maxkulicke/HW12/"
                     target="_blank">Repo</Anchor>
                 </Project>

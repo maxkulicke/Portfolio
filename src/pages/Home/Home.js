@@ -5,11 +5,14 @@ import { H1 } from "../../components/Header";
 import "./style.css"
 
 const circleMax = require("../../assets/images/circleMax.png")
-const blurb = `Full-Stack Web Developer specializing in advanced 
+const devBlurb = `Full-Stack Web Developer specializing in advanced 
 ReactJS Global State applications. Highly effective at creative 
 problem solving, abstract idea development and detail oriented 
-UX & component design. Excellent collaborator and communicator 
-with ferocious work ethic and thorough attention to detail.`
+UX & component design.`
+
+const guitarBlurb = `Seasoned professional guitarist with extensive 
+touring & session experience. Fluent in many genres & styles, gifted
+arranger and accompanist. Excellent collaborator & creative partner. `
 
 function Home() {
   return (
@@ -23,11 +26,13 @@ function Home() {
         <Col size="md-6">
           <Container fluid>
             <div id="homeText">
-              <h2>Max Kulicke</h2>
-              <h5>Full Stack Web Developer</h5>
-              <h5>Musician, Producer, Engineer</h5>
+              <h1>Max Kulicke</h1>
+              <h4>Full Stack Web Developer</h4>
+              <h4>Musician, Producer, Engineer</h4>
               <br />
-              <h6>{blurb}</h6>
+              <h5>{devBlurb}</h5>
+              <br />
+              <h5>{guitarBlurb}</h5>
             </div>
           </Container>
         </Col>

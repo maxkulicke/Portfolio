@@ -4,4 +4,4 @@
 - better About section
 - better layout for portfolio
 - move the footer links / make them more obvious / eye catching
--
+- color fade for background? very slow....

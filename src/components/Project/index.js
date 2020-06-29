@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Card from "../Card";
 import Button from "../Button/index"
-
+import "./style.css"
 
 
 function Project({ children }) {
 
   return (
-    <Card>{ children }</Card>
+    <Card className="project-card">{ children }</Card>
   );
 }
 

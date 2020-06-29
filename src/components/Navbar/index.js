@@ -45,22 +45,36 @@ function Navbar() {
         </li>
       </ul>
 
-      {/* <div className="nav-right justify-content-end">
-        <ul className="nav nav-tabs justify-content-end" id="navbar">
-          <li className="nav-item ml-auto">
-            <a href="https://github.com/maxkulicke" className="nav-link" target="_blank">Github</a>
+      <div className="nav-right ml-auto">
+        <ul className="nav ml-auto" id="">
+          <li>
+            <Link
+              to=""
+              className="">
+              <a href="https://github.com/maxkulicke" className="nav-link" target="_blank">
+                Github </a>
+            </Link>
           </li>
-          <li className="nav-item ml-auto">
-            <a href="https://www.linkedin.com/in/max-kulicke-54516428/"
-              className="nav-link" target="_blank">LinkedIn</a>
+          <li>
+            <Link
+              to=""
+              className="">
+              <a href="https://www.linkedin.com/in/max-kulicke-54516428/" className="nav-link" target="_blank">
+                LinkedIn </a>
+            </Link>
           </li>
-          <li className="nav-item ml-auto">
-            <a href={resumé} download={resumé} target="_blank"
-              className="nav-link"><i class="fa fa-download"></i> Resumé</a>
+          <li>
+            <Link
+              to=""
+              className="">
+              <a href={resumé} download={resumé} className="nav-link" target="_blank">
+                Resumé </a>
+            </Link>
           </li>
         </ul>
-      </div> */}
+      </div>
     </div>
+
   );
 }
 
