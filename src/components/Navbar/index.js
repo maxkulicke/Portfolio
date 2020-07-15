@@ -1,14 +1,15 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./style.css"
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 const resumé = require("../../assets/Max_Kulicke_Resumé.pdf")
 
 function MyNavbar() {
   const location = useLocation();
 
   return (
-      <Navbar fixed="top" className="nav">
+    <div className="nav">
+      <Navbar fixed="top" className="nav shadow" id="navbar">
         <Nav className="mr-auto">
           <Nav.Link href="">
             <Link
@@ -17,10 +18,11 @@ function MyNavbar() {
               Home
         </Link>
           </Nav.Link>
-          <Nav.Link href="">            <Link
-            to="/about"
-            className={location.pathname === "/about" ? "nav-link active" : "nav-link"}>
-            About
+          <Nav.Link href="">
+            <Link
+              to="/about"
+              className={location.pathname === "/about" ? "nav-link active" : "nav-link"}>
+              About
         </Link></Nav.Link>
           <Nav.Link href="">
             <Link
@@ -63,7 +65,8 @@ function MyNavbar() {
           </Nav.Link>
         </Nav>
       </Navbar>
-);
+    </div>
+  );
 }
 
 export default MyNavbar;

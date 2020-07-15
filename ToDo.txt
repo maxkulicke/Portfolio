@@ -3,3 +3,4 @@
 - make portfolio cards rows of 3
 - sticky header
 - make contact a little sleaker
+- picture changes sizes?
