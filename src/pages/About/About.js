@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "../../components/Card";
 import { Col, Row, Container } from "../../components/Grid";
 import "./style.css"
-const Max = require("../../assets/images/max_on_box.jpg")
+const Max = require("../../assets/images/maxOK.png")
 
 function About() {
 
@@ -16,7 +16,7 @@ function About() {
             <h2>About Me</h2>
             <Row>
               <Col size="md-6">
-                <img src={Max} id="maxOnBox" alt="max" />
+                <img src={Max} id="maxOK" alt="max" />
               </Col>
               <Col size="md-6">
                 <h5>

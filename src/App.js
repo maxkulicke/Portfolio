@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import MyNavbar from "./components/Navbar";
 import Header from "../src/components/Header/index"
 import Footer from "../src/components/Footer/index"
 import Home from "./pages/Home/Home";
@@ -15,8 +15,9 @@ function App() {
   return (
     <Router>
       <div id="app">
-        <Header />
-        <Switch>
+        {/* <Header id="header"/> */}
+        <MyNavbar />
+        <Switch id="page">
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/portfolio" component={Portfolio} />

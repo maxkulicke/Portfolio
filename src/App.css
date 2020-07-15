@@ -2,6 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
+#header{
+  position: fixed;
+}
+
+/* .page {
+position: relative;
+} */
+
 body {
   /* background-color: #2D3A8C; */
   animation: pulse 120s infinite;

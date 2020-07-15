@@ -5,6 +5,7 @@ import { H1 } from "../../components/Header";
 import "./style.css"
 
 const circleMax = require("../../assets/images/circleMax.png")
+const maxOnBox = require("../../assets/images/max_on_box.jpg")
 const devBlurb = `Full-Stack Web Developer specializing in advanced 
 ReactJS Global State applications. Highly effective at creative 
 problem solving, abstract idea development and detail oriented 
@@ -18,10 +19,12 @@ function Home() {
   return (
     <div id="home">
       <Row>
-        <Col size="md-6">
-          <Container fluid id="circle">
-            <img src={circleMax} alt="Max" id="circleMax" />
-          </Container>
+      <Col size="md-1" />
+
+        <Col size="md-5">
+          {/* <Container fluid id="circle"> */}
+            <img src={maxOnBox} id="maxOnBox" alt="Max" />
+          {/* </Container> */}
         </Col>
         <Col size="md-6">
           <Container fluid>
