@@ -26,8 +26,8 @@ const makeIFrames = () => {
     return (
       <IFrame
         src={link}
-        width="560"
-        height="315"
+        width="1008"
+        height="567"
         frameborder="0"
         allowtransparency="true"
         allow="encrypted-media"
@@ -36,6 +36,11 @@ const makeIFrames = () => {
   })
   return iFrames;
 }
+
+// const makeRows = (array) => {
+//   let rows = [];
+//   for (var i = 0; i < array.length)
+// }
 
 
 function Music() {
@@ -46,17 +51,17 @@ function Music() {
   return (
     <div id="music">
       <Row>
-        <Col size="md-1">
-        </Col>
-        <Col size="md-10">
+        {/* <Col size="md-1">
+        </Col> */}
+        <Col size="md-12">
           <Container fluid>
             <h2>Music</h2>
             <h5>A sampling of my live and recorded work</h5>
             {iFrames}
           </Container>
         </Col>
-        <Col size="md-1">
-        </Col>
+        {/* <Col size="md-1">
+        </Col> */}
       </Row>
     </div>
   );

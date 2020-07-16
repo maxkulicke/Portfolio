@@ -1,18 +1,19 @@
 .nav {
   background-color: #F5F7FA;
-  /* height: 60px; */
-  /* line-height: 60px; */
+  padding: 0px;
+  margin-bottom: 9%;
+}
+
+#navbar {
+  padding: 0px;
 }
 
 .nav-link{
-  color: #1F2933;
+  color: #171a1d;
   font-size: 16pt;
   background-color: #F5F7FA;
 }
 
 .active {
-  color: #F5F7FA;;
-  font-size: 16pt;
-  background-color: #1F2933;
-
+  font-size: 17.5pt;
 }

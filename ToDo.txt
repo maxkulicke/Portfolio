@@ -1,7 +1,8 @@
 - fade in animation on text? some text animation?
-- outline around landing page pic / new pic?
-- tweak colors
-- better About section
-- better layout for portfolio
-- move the footer links / make them more obvious / eye catching
-- color fade for background? very slow....
+- make iFrames rows of 2
+- make portfolio cards rows of 3
+- sticky header
+- make contact a little sleaker
+- picture changes sizes?
+- border on bottom of navbar?
+- mobile overhaul

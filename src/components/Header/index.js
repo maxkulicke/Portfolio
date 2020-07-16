@@ -1,10 +1,14 @@
 import React from "react";
 import { Col, Row, Container } from "../Grid";
-import Navbar from "../Navbar/index"
+// import Nav from "../Navbar/index"
+import "./style.css"
 
 export function Header(props) {
   return (
-      <Navbar />
+    <>
+    </>
+      // <Nav fixed="top"/>
+      // <Navbar />
   );
 }
 

@@ -11,3 +11,10 @@
 
 }
 
+#maxOnBox {
+  max-width: 90%;
+  max-height: 90%;
+  border-color: #faf5fa  ;
+  border-style: solid;
+  border-width: medium;
+}
