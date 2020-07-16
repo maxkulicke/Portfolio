@@ -19,14 +19,14 @@ function Portfolio() {
   return (
     <div id="portfolio">
       <Row>
-        <Col size="md-1">
-        </Col>
-        <Col size="md-10">
+        {/* <Col size="md-1">
+        </Col> */}
+        <Col size="md-12">
           <Container fluid className="portfolio">
             <h2>Projects</h2>
 
-            <Row className="project-row">
-              <Col size="md-5">
+            <Row className="projects">
+              <Col size="md-4">
                 <Project className="project">
                   <img src={majj} className="card-img portfolio-img" alt="MAJJ"
                     id="majjImg" />
@@ -40,7 +40,7 @@ function Portfolio() {
                     target="_blank">Repo</Anchor>
                 </Project>
               </Col>
-              <Col size="md-5">
+              <Col size="md-4">
                 <Project className="project">
                   <img src={climate} className="card-img portfolio-img" alt="Climate App"
                     id="climateImg" />
@@ -53,10 +53,7 @@ function Portfolio() {
                     className="btn" target="_blank">Repo</Anchor>
                 </Project>
               </Col>
-            </Row>
-            <br />
-            <Row className="project-row">
-              <Col size="md-5">
+              <Col size="md-4">
                 <Project className="project">
                   <img src={password} className="card-img portfolio-img" alt="Password Generator"
                     id="passwordImg" />
@@ -69,7 +66,11 @@ function Portfolio() {
                     target="_blank">Repo</Anchor>
                 </Project>
               </Col>
-              <Col size="md-5">
+            </Row>
+            <br />
+            <br />
+            <Row className="projects">
+              <Col size="md-4">
                 <Project className="project">
                   <img src={snake} className="card-img portfolio-img" alt="Snake"
                     id="cmsImg" />
@@ -81,10 +82,7 @@ function Portfolio() {
                     target="_blank">Repo</Anchor>
                 </Project>
               </Col>
-            </Row>
-            <br />
-            <Row className="project-row">
-              <Col size="md-5">
+              <Col size="md-4">
                 <Project className="project">
                   <img src={portfolio} className="card-img portfolio-img" alt="Day Planner" id="plannerImg" />
                   <h5 className="card-title">Personal Portfolio</h5>
@@ -96,7 +94,7 @@ function Portfolio() {
                     target="_blank">Repo</Anchor>
                 </Project>
               </Col>
-              <Col size="md-5">
+              <Col size="md-4">
                 <Project className="project">
                   <img src={dayPlanner} className="card-img portfolio-img" alt="Day Planner" id="plannerImg" />
                   <h5 className="card-title">Day Planner App</h5>
@@ -110,8 +108,10 @@ function Portfolio() {
               </Col>
             </Row>
             <br />
-            <Row className="project-row">
-              <Col size="md-5">
+            <br />
+            <Row className="projects">
+              <Col size="md-2" />
+              <Col size="md-4">
                 <Project className="project">
                   <img src={bThere} className="card-img portfolio-img" alt="B.There"
                     id="bThereImg" />
@@ -123,7 +123,7 @@ function Portfolio() {
                     className="btn" target="_blank">Repo</Anchor>
                 </Project>
               </Col>
-              <Col size="md-5">
+              <Col size="md-4">
               <Project className="project">
                   <img src={cms} className="card-img portfolio-img" alt="Content Management System"
                     id="cmsImg" />
@@ -135,11 +135,12 @@ function Portfolio() {
                     target="_blank">Repo</Anchor>
                 </Project>
               </Col>
+              <Col size="md-2" />
             </Row>
           </Container>
         </Col>
-        <Col size="md-1">
-        </Col>
+        {/* <Col size="md-1">
+        </Col> */}
       </Row>
     </div>
   );

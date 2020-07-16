@@ -4,3 +4,5 @@
 - sticky header
 - make contact a little sleaker
 - picture changes sizes?
+- border on bottom of navbar?
+- mobile overhaul
